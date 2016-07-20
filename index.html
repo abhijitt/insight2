@@ -5,28 +5,20 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>InsIght</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="dist/css/timeline.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,98 +33,68 @@
 
     <div id="wrapper">
 
-        <!-- Navigation -->
-        <div id="side-wrapper">
-          <nav class="navbar-default sidebar" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-              <div class="sidebar-nav navbar-collapse">
-                  <ul class="nav" id="side-menu">
-                      <li>
-                          <a href="#">UI Elements<span class="fa arrow"></span></a>
-                          <ul class="nav nav-second-level">
-                              <li>
-                                  <a href="panels-wells.html">Panels and Wells</a>
-                              </li>
-                              <li>
-                                  <a href="buttons.html">Buttons</a>
-                              </li>
-                              <li>
-                                  <a href="notifications.html">Notifications</a>
-                              </li>
-                              <li>
-                                  <a href="typography.html">Typography</a>
-                              </li>
-                              <li>
-                                  <a href="icons.html"> Icons</a>
-                              </li>
-                              <li>
-                                  <a href="grid.html">Grid</a>
-                              </li>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <div class="nav-side-menu">
+              <div class="brand">Brand Logo</div>
+              <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                  <div class="menu-list">
+                      <ul id="menu-content" class="menu-content collapse out">
+                          <li data-toggle="collapse" data-target="#service" class="collapsed">
+                            <a href="#">Services <span class="arrow"></span></a>
+                          </li>
+                          <ul class="sub-menu collapse" id="service">
+                            <li ><a id='link'>title1</a><a id='link'>title2</a>
+                              <a id='link'>title1</a><a id='link'>title2</a>
+                              <a id='link'>title1</a><a id='link'>title2</a>
+                              <a id='link'>title1</a><a id='link'>title2</a>
+                            </li>
                           </ul>
-                          <!-- /.nav-second-level -->
-                      </li>
-                  </ul>
-              </div>
-              <!-- /.sidebar-collapse -->
-          </nav>
-          <!-- /.navbar-static-side -->
-
+                          <li data-toggle="collapse" data-target="#new" class="collapsed">
+                            <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                          </li>
+                          <ul class="sub-menu collapse" id="new">
+                            <li>New New 1</li>
+                            <li>New New 2</li>
+                            <li>New New 3</li>
+                          </ul>
+                      </ul>
+               </div>
+          </div>
         </div>
-            <!-- /.navbar-header -->
+        <!-- /#sidebar-wrapper -->
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Simple Sidebar</h1>
+                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
                 </div>
-                <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
-              <div class="col-lg-12">
-                  <h3 class="">Topic 1</h3>
-              </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-              <div class="col-lg-12">
-                  <p class=""><strong>Question:</strong>This is the Question??</p>
-              </div>
-            </div>
-            <div class="row">
-              <img src="http://www.conceptdraw.com/How-To-Guide/picture/Percentage-pie-chart-DA-determinations.png" alt="null" width="630"/>
-            </div>
-            <div class="row">
-              <img src="http://www.conceptdraw.com/How-To-Guide/picture/Percentage-pie-chart-DA-determinations.png" alt="null" width="630"/>
-            </div>
-            <!-- /.row -->
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /#page-content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="bower_components/raphael/raphael-min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
 </body>
 
