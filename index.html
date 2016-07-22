@@ -32,15 +32,14 @@
 <body>
 
     <div id="wrapper">
-
+      <i class="fa fa-bars fa-2x arihant" id="a"></i>
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
           <div class="nav-side-menu">
-              <div class="brand">Brand Logo</div>
-              <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                   <div class="menu-list">
-                      <ul id="menu-content" class="menu-content collapse out">
-                          <li data-toggle="collapse" data-target="#service" class="collapsed">
+                    <div class="brand">Brand Logo</div>
+                      <ul id="menu-content" class="menu-content out">
+                          <li data-toggle="collapse" data-target="#service">
                             <a href="#">Services <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="service">
@@ -90,9 +89,9 @@
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
+    $("#a").click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+        $("#wrapper").toggleClass("toggledx");
     });
     </script>
 
