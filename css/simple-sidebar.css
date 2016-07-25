@@ -7,6 +7,7 @@
  body {
     margin: 0px;
     padding: 0px;
+    font-family: Encode Sans;
  }
 
 /* Toggle Styles */
@@ -155,8 +156,8 @@
 
 .nav-side-menu li {
   padding-left: 0px;
-  border-left: 3px solid #2e353d;
 }
+
 .nav-side-menu li a {
   text-decoration: none;
   color: #e1ffff;
