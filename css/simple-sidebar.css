@@ -4,10 +4,37 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ @font-face {
+     font-family: "Encode Sans Bold";
+     src: url('EncodeSansNarrow-700-Bold.ttf') format("truetype");
+ }
+
+ @font-face {
+     font-family: "Encode Sans Light";
+     src: url('EncodeSansNarrow-300-Light.ttf') format("truetype");
+ }
+
+ @font-face {
+     font-family: "Encode Sans Semibold";
+     src: url('EncodeSansNarrow-600-SemiBold.ttf') format("truetype");
+ }
+
+ @font-face {
+     font-family: "Encode Sans Regular";
+     src: url('EncodeSansNarrow-400-Regular.ttf') format("truetype");
+ }
+
+ @font-face {
+     font-family: "Encode Sans Medium";
+     src: url('EncodeSansNarrow-500-Medium.ttf') format("truetype");
+ }
+
  body {
     margin: 0px;
     padding: 0px;
+    font-family: Encode Sans;
  }
+
 
 /* Toggle Styles */
 
@@ -67,6 +94,8 @@
   border-top-right-radius: 10px;  /* 100px of height + 10px of border */
   border-bottom-right-radius: 10px; /* 100px of height + 10px of border */
   border: 1px solid white;
+  font-family: "Encode Sans Light", Verdana, Tahoma;
+  font-size: 13px;
 }
 
 #link:hover{
@@ -155,8 +184,22 @@
 
 .nav-side-menu li {
   padding-left: 0px;
-  border-left: 3px solid #2e353d;
+  font-family: "Encode Sans Bold", Verdana, Tahoma;
+  font-size: 2em;
 }
+
+.nav-side-menu h2{
+  font-family: "Encode Sans Bold", Verdana, Tahoma;
+}
+
+.nav-side-menu h1{
+  font-family: "Encode Sans Bold", Verdana, Tahoma;
+}
+
+.nav-side-menu h3{
+  font-family: "Encode Sans Bold", Verdana, Tahoma;
+}
+
 .nav-side-menu li a {
   text-decoration: none;
   color: #e1ffff;
@@ -184,6 +227,20 @@
   color: #ffffff;
   width: 40px;
   text-align: center;
+}
+
+
+
+.container-fluid h1{
+  font-family: "Encode Sans Semibold", Verdana, Tahoma;
+}
+
+.container-fluid p{
+  font-family: "Encode Sans Regular", Verdana, Tahoma;
+}
+
+.container-fluid .question{
+  font-family: "Encode Sans Medium", Verdana, Tahoma;
 }
 
 @media (max-width: 767px) {
