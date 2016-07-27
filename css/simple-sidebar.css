@@ -218,6 +218,11 @@
 
 
 @media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
   .arihant{
     z-index: 10 !important;
     padding: 3px;
@@ -245,11 +250,17 @@
   }
 }
 
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
 
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
     }
+
     #wrapper.toggledx {
         padding-left: 0;
     }
@@ -261,15 +272,14 @@
     #wrapper.toggledx #sidebar-wrapper {
         width: 0;
     }
+
     #page-content-wrapper {
         padding: 20px;
         position: relative;
     }
+
     #wrapper.toggledx #page-content-wrapper {
         position: relative;
         margin-right: 0;
-    }
-    .nav-side-menu .menu-list .menu-content {
-      display: block;
     }
 }
