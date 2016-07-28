@@ -42,15 +42,15 @@
 }
 
 #wrapper.toggledx {
-    padding-left: 250px;
+    padding-left: 400px;
 }
 
 #sidebar-wrapper {
     position: fixed;
-    left: 250px;
+    left: 400px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -400px;
     overflow-y: auto;
     background: #00ADF1;
     -webkit-transition: all 0.5s ease;
@@ -71,7 +71,7 @@
 
 #wrapper.toggledx #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -400px;
 }
 
 /* Sidebar Styles */
@@ -89,6 +89,11 @@
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.nav-side-menu li:active {
+  background-color: red;
+
 }
 
 .arihant{
@@ -109,23 +114,28 @@
   height: 20px;
   color:white;
   padding-left:5px;
-  padding-right:5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding-right:10px;
+  margin-left: 2px;
+  margin-right: 2px;
   background-color: transparent;
-  border-top-left-radius: 10px;  /* 100px of height + 10px of border */
-  border-bottom-left-radius: 10px; /* 100px of height + 10px of border */
-  border-top-right-radius: 10px;  /* 100px of height + 10px of border */
-  border-bottom-right-radius: 10px; /* 100px of height + 10px of border */
-  border: 1px solid white;
+  border-top-left-radius: 4px;  /* 100px of height + 10px of border */
+  border-bottom-left-radius: 4px; /* 100px of height + 10px of border */
+  border-top-right-radius: 4px;  /* 100px of height + 10px of border */
+  border-bottom-right-radius: 4px; /* 100px of height + 10px of border */
+  border: 2px solid white;
   font-family: "Encode Sans Light", Verdana, Tahoma;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #link:hover{
   background: white;
   color: #00ADF1;
 }
+
+.selected{
+  background: #0193CC;
+}
+
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;
@@ -134,7 +144,7 @@
   background-color: #00AEF1;
   position: fixed;
   top: 0px;
-  width: 250px;
+  width: 400px;
   height: 100%;
   color: #e1ffff;
   margin:0px;
@@ -145,7 +155,7 @@
   line-height: 50px;
   display: block;
   text-align: center;
-  font-size: 14px;
+  font-size: 19pt;
 }
 
 .nav-side-menu .toggle-btn {
@@ -163,7 +173,7 @@
 
 
 .nav-side-menu ul .active,
-.nav-side-menu li .active {
+.nav-side-menu li .active a{
 
 }
 .nav-side-menu ul .sub-menu li.active,
@@ -187,7 +197,7 @@
 .nav-side-menu li {
   padding-left: 0px;
   font-family: "Encode Sans Bold", Verdana, Tahoma;
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 .nav-side-menu h2{
@@ -204,17 +214,18 @@
 
 .container-fluid h1{
   font-family: "Encode Sans Semibold", Verdana, Tahoma;
+  font-size: 30pt;
 }
 
 .container-fluid p{
   font-family: "Encode Sans Regular", Verdana, Tahoma;
+  font-size: 14pt;
 }
 
 .container-fluid .question{
   font-family: "Encode Sans Medium", Verdana, Tahoma;
+  font-size: 14pt;
 }
-
-
 
 
 @media (max-width: 767px) {
@@ -244,7 +255,7 @@
   }
   .brand {
     text-align: left !important;
-    font-size: 22px;
+    font-size: 19pt;
     padding-left: 20px;
     line-height: 50px !important;
   }
@@ -258,7 +269,7 @@
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+        padding-left: 400px;
     }
 
     #wrapper.toggledx {
@@ -266,7 +277,7 @@
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 400px;
     }
 
     #wrapper.toggledx #sidebar-wrapper {

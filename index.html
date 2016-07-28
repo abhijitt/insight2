@@ -43,7 +43,7 @@
                       <h1>Survey</h1>
                     </div>
                       <ul id="menu-content" class="menu-content out">
-                          <li data-toggle="collapse" data-target="#academics" style="border-left: 6px solid black;">
+                          <li class="top-link" data-toggle="collapse" data-target="#academics" style="border-left: 6px solid black;">
                             <a href="#">Academics <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="academics" >
@@ -53,7 +53,7 @@
                               <a id='link'>title1</a><a id='link'>title2</a>
                             </li>
                           </ul>
-                          <li data-toggle="collapse" data-target="#extracurriculars" style="border-left: 6px solid red;">
+                          <li class="top-link"  data-toggle="collapse" data-target="#extracurriculars" style="border-left: 6px solid red;">
                             <a href="#">Extracurriculars <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="extracurriculars">
@@ -63,7 +63,7 @@
                               <a id='link'>title1</a><a id='link'>title2</a>
                             </li>
                           </ul>
-                          <li data-toggle="collapse" data-target="#personal" style="border-left: 6px solid white;">
+                          <li class="top-link"  data-toggle="collapse" data-target="#personal" style="border-left: 6px solid white;">
                             <a href="#">Personal <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="personal">
@@ -73,7 +73,7 @@
                               <a id='link'>title1</a><a id='link'>title2</a>
                             </li>
                           </ul>
-                          <li data-toggle="collapse" data-target="#lifestyle" style="border-left: 6px solid green;">
+                          <li class="top-link" data-toggle="collapse" data-target="#lifestyle" style="border-left: 6px solid green;">
                             <a href="#">Lifestyle <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="lifestyle">
@@ -83,7 +83,7 @@
                               <a id='link'>title1</a><a id='link'>title2</a>
                             </li>
                           </ul>
-                          <li data-toggle="collapse" data-target="#career" style="border-left: 6px solid yellow;">
+                          <li class="top-link"  data-toggle="collapse" data-target="#career" style="border-left: 6px solid yellow;">
                             <a href="#">Career <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="career">
@@ -93,7 +93,7 @@
                               <a id='link'>title1</a><a id='link'>title2</a>
                             </li>
                           </ul>
-                          <li data-toggle="collapse" data-target="#opinion" style="border-left: 6px solid purple;">
+                          <li class="top-link"  data-toggle="collapse" data-target="#opinion" style="border-left: 6px solid purple;">
                             <a href="#">Opinion <span class="arrow"></span></a>
                           </li>
                           <ul class="sub-menu collapse" id="opinion">
@@ -137,6 +137,13 @@
     $("#a").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggledx");
+    });
+
+    $('#top-link').click(function(){
+      $(this).toggleClass('selected');
+    });
+    $('.top-link').click(function(){
+      $(this).toggleClass('selected');
     });
     </script>
 
