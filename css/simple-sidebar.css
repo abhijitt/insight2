@@ -24,11 +24,14 @@
      src: url('EncodeSansNarrow-500-Medium.ttf') format("truetype");
  }
 
- body {
+html, body {
     margin: 0px;
     padding: 0px;
     font-family: Encode Sans;
- }
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 
 /* Toggle Styles */
@@ -42,7 +45,7 @@
 }
 
 #wrapper.toggledx {
-    padding-left: 400px;
+    padding-left: 250px;
 }
 
 #sidebar-wrapper {
@@ -67,6 +70,11 @@
     width: 100%;
     position: absolute;
     padding: 15px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 #wrapper.toggledx #page-content-wrapper {
