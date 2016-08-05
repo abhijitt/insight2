@@ -149,10 +149,11 @@ html, body {
   border-top-right-radius: 6px;  /* 100px of height + 10px of border */
   border-bottom-right-radius: 6px; /* 100px of height + 10px of border */
   border: 0px solid white;
-  font-family: "Encode Sans Medium", Verdana, Tahoma;
+  font-family: "Encode Sans Semibold", Verdana, Tahoma;
   font-size: 14px;
   white-space: nowrap;
   float:right;
+  text-shadow: 2px 2px 4px white;
 }
 
 .nav-side-menu .top-narrative:hover {
@@ -265,8 +266,13 @@ html, body {
     z-index: 10 !important;
     padding: 3px;
     background-color: #ffffff;
-    color: black;
-    background: #e1ffff;
+    color: white;
+    background: #00aef1;
+    border-top-left-radius: 6px;  /* 100px of height + 10px of border */
+    border-bottom-left-radius: 6px; /* 100px of height + 10px of border */
+    border-top-right-radius: 6px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 6px; /* 100px of height + 10px of border */
+
   }
   .nav-side-menu .toggle-btn {
     display: block;
