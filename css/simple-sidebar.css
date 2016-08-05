@@ -50,10 +50,10 @@ html, body {
 
 #sidebar-wrapper {
     position: fixed;
-    left: 300px;
+    left: 400px;
     width: 0;
     height: 100%;
-    margin-left: -300px;
+    margin-left: -400px;
     overflow-y: auto;
     background: #00ADF1;
     -webkit-transition: all 0.5s ease;
@@ -79,7 +79,7 @@ html, body {
 
 #wrapper.toggledx #page-content-wrapper {
     position: absolute;
-    margin-right: -300px;
+    margin-right: -400px;
 }
 
 /* Sidebar Styles */
@@ -147,10 +147,11 @@ html, body {
   border-bottom-left-radius: 6px; /* 100px of height + 10px of border */
   border-top-right-radius: 6px;  /* 100px of height + 10px of border */
   border-bottom-right-radius: 6px; /* 100px of height + 10px of border */
-  border: 2px solid white;
+  border: 0px solid white;
   font-family: "Encode Sans Medium", Verdana, Tahoma;
   font-size: 14px;
   white-space: nowrap;
+  float:right;
 }
 
 .nav-side-menu .top-narrative:hover {
@@ -170,7 +171,7 @@ html, body {
   background-color: #00AEF1;
   position: fixed;
   top: 0px;
-  width: 300px;
+  width: 400px;
   height: 100%;
   color: #e1ffff;
   margin:0px;
@@ -295,7 +296,7 @@ html, body {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 300px;
+        padding-left: 400px;
     }
 
     #wrapper.toggledx {
@@ -303,7 +304,7 @@ html, body {
     }
 
     #sidebar-wrapper {
-        width: 300px;
+        width: 400px;
     }
 
     #wrapper.toggledx #sidebar-wrapper {
