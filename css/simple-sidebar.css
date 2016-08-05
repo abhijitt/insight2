@@ -45,7 +45,7 @@ html, body {
 }
 
 #wrapper.toggledx {
-    padding-left: 250px;
+    padding-left: 300px;
 }
 
 #sidebar-wrapper {
@@ -63,7 +63,7 @@ html, body {
 }
 
 #wrapper.toggledx #sidebar-wrapper {
-    width: 250px;
+    width: 300px;
 }
 
 #page-content-wrapper {
@@ -131,13 +131,14 @@ html, body {
 }
 
 #link:hover{
-
+  background: white;
+  color: #7A1EA1;
 }
 
 .nav-side-menu .top-narrative {
   display:none;
   height: 20px;
-  color:white;
+  color:#7A1EA1;
   padding-left:4px;
   padding-right:4px;
   margin-left: 2px;
@@ -155,8 +156,7 @@ html, body {
 }
 
 .nav-side-menu .top-narrative:hover {
-  background: white;
-  color: #00ADF1;
+
 }
 
 .selected{
@@ -266,6 +266,7 @@ html, body {
     padding: 3px;
     background-color: #ffffff;
     color: black;
+    background: #e1ffff;
   }
   .nav-side-menu .toggle-btn {
     display: block;
