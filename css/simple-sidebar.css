@@ -50,10 +50,10 @@ html, body {
 
 #sidebar-wrapper {
     position: fixed;
-    left: 400px;
+    left: 350px;
     width: 0;
     height: 100%;
-    margin-left: -400px;
+    margin-left: -350px;
     overflow-y: auto;
     background: #00ADF1;
     -webkit-transition: all 0.5s ease;
@@ -79,7 +79,7 @@ html, body {
 
 #wrapper.toggledx #page-content-wrapper {
     position: absolute;
-    margin-right: -400px;
+    margin-right: -350px;
 }
 
 /* Sidebar Styles */
@@ -171,7 +171,7 @@ html, body {
   background-color: #00AEF1;
   position: fixed;
   top: 0px;
-  width: 400px;
+  width: 350px;
   height: 100%;
   color: #e1ffff;
   margin:0px;
@@ -296,7 +296,7 @@ html, body {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 400px;
+        padding-left: 350px;
     }
 
     #wrapper.toggledx {
@@ -304,7 +304,7 @@ html, body {
     }
 
     #sidebar-wrapper {
-        width: 400px;
+        width: 350px;
     }
 
     #wrapper.toggledx #sidebar-wrapper {
