@@ -45,7 +45,7 @@ html, body {
 }
 
 #wrapper.toggledx {
-    padding-left: 250px;
+    padding-left: 300px;
 }
 
 #sidebar-wrapper {
@@ -63,7 +63,7 @@ html, body {
 }
 
 #wrapper.toggledx #sidebar-wrapper {
-    width: 250px;
+    width: 300px;
 }
 
 #page-content-wrapper {
