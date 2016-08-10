@@ -75,6 +75,10 @@ html, body {
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
 }
 
 #wrapper.toggledx #page-content-wrapper {
@@ -260,11 +264,18 @@ html, body {
 
 
 @media (max-width: 767px) {
+
   .nav-side-menu {
     position: relative;
     width: 100%;
     margin-bottom: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity:1;
   }
+
   .arihant{
     z-index: 10 !important;
     padding: 3px;
@@ -275,7 +286,7 @@ html, body {
     border-bottom-left-radius: 6px; /* 100px of height + 10px of border */
     border-top-right-radius: 6px;  /* 100px of height + 10px of border */
     border-bottom-right-radius: 6px; /* 100px of height + 10px of border */
-
+    position:fixed;
   }
   .nav-side-menu .toggle-btn {
     display: block;
