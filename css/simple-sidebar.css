@@ -235,6 +235,10 @@ html, body {
   overflow-y: scroll;
 }
 
+h2{
+  font-family: "Encode Sans Semibold", Verdana, Tahoma;
+}
+
 .nav-side-menu h2{
   font-family: "Encode Sans Bold", Verdana, Tahoma;
 }
