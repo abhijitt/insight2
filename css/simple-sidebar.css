@@ -231,8 +231,8 @@ html, body {
   font-family: "Encode Sans Bold", Verdana, Tahoma;
   font-size: 14pt;
   padding-left: 20px;
-  overflow-x:scroll;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h2{
