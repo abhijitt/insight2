@@ -251,6 +251,10 @@ h2{
   font-family: "Encode Sans Bold", Verdana, Tahoma;
 }
 
+.nav-side-menu h4{
+  font-family: "Encode Sans Bold", Verdana, Tahoma;
+}
+
 .container-fluid h1{
   font-family: "Encode Sans Semibold", Verdana, Tahoma;
   font-size: 30pt;
