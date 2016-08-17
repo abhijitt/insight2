@@ -24,6 +24,12 @@
      src: url('EncodeSansNarrow-500-Medium.ttf') format("truetype");
  }
 
+ @font-face {
+     font-family: "Playfair Display";
+     src: url('PlayfairDisplay-Regular.ttf') format("truetype");
+ }
+
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -261,7 +267,7 @@ h2{
 }
 
 .container-fluid p{
-  font-family: "Encode Sans Regular", Verdana, Tahoma;
+  font-family: "Playfair Display", Verdana, Tahoma;
   font-size: 14pt;
 }
 
