@@ -15,7 +15,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -26,121 +25,78 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+
+    @font-face {
+        font-family: "Encode Sans Bold";
+        src: url('EncodeSansNarrow-700-Bold.ttf') format("truetype");
+    }
+
+    @font-face {
+        font-family: "Encode Sans Light";
+        src: url('EncodeSansNarrow-300-Light.ttf') format("truetype");
+    }
+
+    @font-face {
+        font-family: "Encode Sans Semibold";
+        src: url('EncodeSansNarrow-600-SemiBold.ttf') format("truetype");
+    }
+
+    body{
+      width: 100%;
+      height: 100%;
+      background: url("images/iitb_convocation_hall.jpg") no-repeat center center fixed;
+      text-align: center;
+      background-repeat:no-repeat;
+    }
+    h1{
+      color: white;
+      font-family: "Encode Sans Bold", Verdana, Tahoma;
+      text-shadow: 0 0 3px white;
+    }
+    a{
+      border-top-left-radius: 6px;  /* 100px of height + 10px of border */
+      border-bottom-left-radius: 6px; /* 100px of height + 10px of border */
+      border-top-right-radius: 6px;  /* 100px of height + 10px of border */
+      border-bottom-right-radius: 6px; /* 100px of height + 10px of border */
+      padding-left: 10px;
+      padding-right: 10px;
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      font-family: "Encode Sans Bold", Verdana, Tahoma;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    a:hover{
+      background: white;
+      color: black;
+      text-decoration: none;
+    }
+    </style>
 
 </head>
 
 <body>
 
-    <div id="wrapper">
-      <i class="fa fa-bars fa-2x arihant" id="a"></i>
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-          <div class="nav-side-menu">
-                  <div class="menu-list">
-                    <div class="brand" style="text-align:left; padding-left:30px;">
-                      <img src="images/logo.png" align="middle" style="width:auto; padding-top: 40px; padding-bottom: 40px;">
-                    </div>
-                      <ul id="menu-content" class="menu-content out">
-                          <li id="academics-top" class="top-link" data-toggle="collapse" data-target="#academics" style="border-left: 6px solid black;">
-                            <a >Academics<span class="arrow"></span><a href='Academics_Narrative.html' class="top-narrative">Read Narrative<a></a>
-                          </li>
-                          <ul class="sub-menu collapse" id="academics" >
-                            <li style="border-left: 6px solid black;">
-                              <a href="academics.html#Department-wise-classification" id='link'>Department-wise classification</a>
-                              <a href="academics.html#Degree-of-Graduation" id='link'>Degree of Graduation</a>
-                              <a href="academics.html#Cumulative-Performance-Index" id='link'>Cumulative Performance Index</a>
-                              <a href="academics.html#Attitude-Towards-Academics" id='link'>Attitude Towards Academics</a>
-                              <a href="academics.html#Expectations-vs-Reality" id='link'>Expectations vs Reality</a>
-                              <a href="academics.html#Academic-Flexibility" id='link'>Academic Flexibility</a>
-                              <a href="academics.html#Attendance" id='link'>Attendance</a>
-                              <a href="academics.html#Extent-of-Malpractices" id='link'>Extent of Malpractices</a>
-                              <a href="academics.html#Dishonesty-Causation" id='link'>Dishonesty: Causation</a>
-                              <a href="academics.html#Dishonesty-Usage" id='link'>Dishonesty: Usage</a>
-                              <a href="academics.html#Ethics" id='link'>Ethics</a>
-                              </li>
-                          </ul>
-                          <li id="extracurriculars-top" class="top-link"  data-toggle="collapse" data-target="#extracurriculars" style="border-left: 6px solid red;">
-                            <a >Extracurriculars <span class="arrow"></span></a><a href='Extracurriculars_narrative.html' class="top-narrative">Read Narrative<a></a>
-                          </li>
-                          <ul class="sub-menu collapse" id="extracurriculars">
-                            <li style="border-left: 6px solid red;">
-                              <a href="extracurriculars.html#Participation" id='link'>Participation</a>
-                              <a href="extracurriculars.html#Skills-Developed" id='link'>Skills Developed</a>
-                              <a href="extracurriculars.html#Value-Addition" id='link'>Value Addition</a>
-                              <a href="extracurriculars.html#Influence-of-POR" id='link'>Influence of POR</a>
-                            </li>
-                          </ul>
-                          <li id="personal-top" class="top-link"  data-toggle="collapse" data-target="#personal" style="border-left: 6px solid white;">
-                            <a >Personal <span class="arrow"></span></a><a href='Personal_narrative.html' class="top-narrative">Read Narrative<a></a>
-                          </li>
-                          <ul class="sub-menu collapse" id="personal">
-                            <li style="border-left: 6px solid white;">
-                              <a href='personal.html#Gender-and-Sexual-Orientation' id='link'>Gender and Sexual Orientation</a>
-                              <a href='personal.html#Hometown-Demographics' id='link'>Hometown Demographics</a>
-                              <a href='personal.html#Life-after-Graduation' id='link'>Life after Graduation</a>
-                              <a href='personal.html#Relationship-with-Family' id='link'>Relationship with Family</a>
-                              <a href='personal.html#Relationships-and-Sex' id='link'>Relationships and Sex</a>
-                              <a href='personal.html#Social-Life' id='link'>Social Life</a>
-                            </li>
-                          </ul>
-                          <li id="lifestyle-top" class="top-link" data-toggle="collapse" data-target="#lifestyle" style="border-left: 6px solid green;">
-                            <a >Lifestyle <span class="arrow"></span></a><a href='Lifestyle_narrative.html' class="top-narrative">Read Narrative<a></a>
-                          </li>
-                          <ul class="sub-menu collapse" id="lifestyle">
-                            <li style="border-left: 6px solid green;">
-                              <a href='lifestyle.html#Alcohol' id='link'>Alcohol</a>
-                              <a href='lifestyle.html#Physical-and-Mental-Fitness' id='link'>Physical and Mental Fitness</a>
-                              <a href='lifestyle.html#Nicotine' id='link'>Nicotine</a>
-                              <a href='lifestyle.html#expenditure' id='link'>Expenditure</a>
-                              <a href='lifestyle.html#Bucket-list' id='link'>Bucket-list</a>
-                            </li>
-                          </ul>
-                          <li id="career-top" class="top-link"  data-toggle="collapse" data-target="#career" style="border-left: 6px solid yellow;">
-                            <a >Career <span class="arrow"></span></a><a href="Career_narrative.html" class="top-narrative">Read Narrative<a></a>
-                          </li>
-                          <ul class="sub-menu collapse" id="career">
-                            <li style="border-left: 6px solid yellow; padding-right:4px;">
-                              <a href="career.html#present-career-path" id='link'>Career Choice</a>
-                              <a href="career.html#place-of-posting" id='link'>Place of Posting</a>
-                              <a href="career.html#city-of-posting" id='link'>Ideal City for Posting</a>
-                              <a href="career.html#life-after-graduation" id='link'>Life after Graduation</a>
-                              <a href="career.html#entrance-examinations" id='link'>Entrance Examinations</a>
-                              <a href="career.html#core-karoge" id='link'>Core Karoge?</a>
-                              <a href="career.html#influence-of-major-internships" id='link'>Influence of major internships</a>
-                              <a href="career.html#change-of-mind" id='link'>Change of Mind</a>
-                            </li>
-                          </ul>
-                          <li id="opinion-top" class="top-link"  data-toggle="collapse" data-target="#opinion" style="border-left: 6px solid purple;">
-                            <a >Opinion <span class="arrow"></span></a><a href='Opinion_narrative.html' class="top-narrative">Read Narrative</a>
-                          </li>
-                          <ul class="sub-menu collapse" id="opinion">
-                            <li style="border-left: 6px solid purple;">
-                              <a href="opinion.html#About-Hostel-Rooms" id='link'>About Hostel Rooms</a>
-                              <a href="opinion.html#About-Mess-food" id='link'>About Mess food</a>
-                              <a href="opinion.html#On-being-an-IIT-ian" id='link'>On being an IIT-ian</a>
-                              <a href="opinion.html#On-Social-Disconnect" id='link'>On Social Disconnect</a>
-                              <a href="opinion.html#About-startups-and-Entrepreneurship" id='link'>About startups and Entrepreneurship</a>
-                              <a href="opinion.html#On-Freedom-of-Expression" id='link'>On Freedom of Expression</a>
-                              <a href="opinion.html#On-political-inclinations" id='link'>On political inclinations</a>
-                              <a href="opinion.html#On-Religious-Beliefs" id='link'>On Religious Beliefs</a>
-                            </li>
-                          </ul>
-                      </ul>
-               </div>
-          </div>
-        </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
+        <br>
+        <br>
+        <img src="images/logo WHITE.png" align="middle" style="width:20%; padding-top: 7%;">
+        <br>
+        <br>
+        <h1>
+          The IITB Senior Survey of class 2016
+        </h1>
+        <br>
+        <br>
+        <br>
+        <a href="academics.html">Enter</a>
 
-
-            </div>
-        </div>
         <!-- /#page-content-wrapper -->
 
-    </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
