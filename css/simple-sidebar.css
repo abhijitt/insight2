@@ -39,7 +39,10 @@ html, body {
 }
 
 
-
+img{
+  align-items: center;
+  width:80%;
+}
 /* Toggle Styles */
 
 #wrapper {
