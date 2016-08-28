@@ -154,7 +154,7 @@ img{
 .nav-side-menu .top-narrative {
   display:none;
   height: 20px;
-  color:#7A1EA1;
+  color:white;
   padding-left:4px;
   padding-right:4px;
   margin-left: 2px;
@@ -172,7 +172,7 @@ img{
 }
 
 .nav-side-menu .top-narrative:hover {
-  color:white;
+  color:yellow;
 }
 
 .selected{
