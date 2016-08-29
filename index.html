@@ -41,20 +41,13 @@
         src: url('EncodeSansNarrow-600-SemiBold.ttf') format("truetype");
     }
 
-    html, body{
-      margin:0;
-      padding:0;
-
-
-    }
-    body{
+    body,html{
       width: 100%;
       height: 100%;
       background: url("images/Cover.png") no-repeat center center fixed;
       background-repeat:no-repeat;
       margin: 0;
       padding: 0;
-
     }
     h1{
       color: white;
@@ -78,13 +71,12 @@
       text-decoration: none;
       box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     }
+
     a:hover{
       background: white;
       color: black;
       text-decoration: none;
     }
-
-
 
     @media (max-width: 1000px) {
 
@@ -110,7 +102,7 @@
                 <div class="col-md-12 col-lg-offset-0" id="main-content">
                   <div class="row">
                     <div class="col-md-6" style=" padding-top:4%; padding-left:0px;">
-                      <img src="images/class of 2016.png" align="left" style="width:100%; padding-left:0px;">
+                      <img src="images/class of 2016.png" align="left" style="width:100%;">
                     </div>
                   </div>
 
@@ -133,11 +125,15 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-6" style=" margin-top: 1%;padding-top: 2%; text-align:left; color: white; margin-left:0px; background-color: rgba(0, 0, 0, 0.4); padding-bottom: 1%; padding-left:1%; padding-right:1%; padding-top:1%; margin-top:3%;
+                    <div class="col-md-6" style="text-align:left; color: white; background-color: rgba(0, 0, 0, 0.4);
+                    padding-bottom: 1%;
+                    padding-left:1%;
+                    padding-right:1%;
+                    padding-top:1%;
                     border-top-left-radius:1em;
-              border-top-right-radius:1em;
-              border-bottom-right-radius:1em;
-              border-bottom-left-radius:1em;
+                    border-top-right-radius:1em;
+                    border-bottom-right-radius:1em;
+                    border-bottom-left-radius:1em;
                     ">
                         <p>
                           As another crop of students graduated last month, we set out to know more about the Class of 2016. Covering diverse topics ranging from academic performance and lifestyle to sexual orientation and post-graduation plans, this survey was hosted on a paid platform and students responded anonymously, ensuring more honest replies.
@@ -155,12 +151,9 @@
                     <div class="col-md-1">
 
                     </div>
-                    <div class="col-md-4" style="margin-bottom:80px;" style="                    ">
-                      <div class="row">
+                    <div class="col-md-4">
 
-                      </div>
-                      <div class="row" style="
-                  ">
+                      <div class="row">
                         <a href="academics.html" style="
                           margin-top:20px;
                           margin-left:0px;
@@ -200,43 +193,8 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script> <script src="js/scroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#a").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggledx");
-        //$('#page-content-wrapper').toggle();
-    });
-
-    $('.top-link').click(function(){
-      $(this).toggleClass('selected');
-      ($(this).find(".top-narrative")).toggle();
-
-      var side_menu = ['academics-top','extracurriculars-top','personal-top','lifestyle-top','career-top','opinion-top'];
-
-      for(var i=0; i<side_menu.length; i++){
-        if(($(this).attr('id')) == side_menu[i]){
-
-        } else{
-          $('#'+side_menu[i].substring(0,side_menu[i].length-4)).collapse('hide');
-          ($('#'+side_menu[i]).find(".top-narrative")).hide();
-          $('#'+side_menu[i]).removeClass('selected')
-        }
-      }
-    });
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if( target.length ) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
-
-    </script>
 
 </body>
 
